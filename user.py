@@ -73,7 +73,6 @@ class Credentials():
     def find_credential(cls, account):
         """
         Method that takes in a account_name and returns a credential that matches that account_name.
-
         """
         for credential in cls.credentials_list:
             if credential.account == account:
@@ -98,4 +97,11 @@ class Credentials():
         """
         Method that returns all items in the credentials list
         """
-        return cls.credentials_list      
+        return cls.credentials_list   
+
+    def generatePassword(stringLength=8):
+        """
+        Generate a random password string of letters and digits and special characters
+        """
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+        return ''.join(random.choice(password) for i in range(stringLength))       
