@@ -1,4 +1,4 @@
-# Password-Locker  
+# Password-Vault  
 #### 22/05/2020
 #### By **Jorim Midumbi Okong'o Opondo**
 ## Description
@@ -7,7 +7,7 @@ This project is a python application that manages login and signup credentials o
 
 ## User Stories
 
-- As a user, you can create a password locker account with your details, a login username and password.
+- As a user, you can create a password vault account with your details, a login username and password.
 - As a user, you can store your already existing account credentials in the application. 
 - As a user, you can create new account credentials in the application. 
 - As a user, you have the option of putting in a password that you want to use for the new credential account.
@@ -32,16 +32,16 @@ This project is a python application that manages login and signup credentials o
 - code . or atom . based on the text editor you have.
 - To run the application, open the cloned file in terminal and run the following commands:
         $ chmod +x interface.py
-        $ ./interface.py
+        $ ./run.py
 - To run test for the application
-        $ python3 passlock_test.py
+        $ python3 user_test.py
 
 
 ## Behaviour Driven Development
 
  Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
-|Open the application on the terminal | Run the command ```$ ./interface.py```|Hello Welcome to your Accounts Password Store... <br>* CA ---  Create New Account * LI ---  Have An Account |
+|Open the application on the terminal | Run the command ```$ ./interface.py```|Hello Welcome to your Accounts Password Vault... <br>* CA ---  Create New Account * LI ---  Have An Account |
 |Select  CA| input username and password| Hello ```username```, Your account has been created succesfully! Your password is: ```password```|
 |Select LI  | Enter your password and username you signed up with| Abbreviations menu to help you navigate through the application|
 |Store a new credential in the application| Enter ```CC```|Enter Account, username, password<br>choose ```tp``` to enter your password or ```gp``` for the application to generate a password for you |
