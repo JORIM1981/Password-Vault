@@ -106,7 +106,7 @@ def main():
         password = input("password: ")
         login = login_user(username,password)
         if login_user == login:
-            print(f"Hello {username}.Welcome To PassWord Locker Manager")  
+            print(f"Hello {username}.Welcome To PassWord Vault Manager")  
             print('\n')
     while True:
         print("Use these short codes:\n CC - Create a new credential \n DC - Display Credentials \n FC - Find a credential \n GP - Generate A randomn password \n D - Delete credential \n EX - Exit the application \n")
@@ -175,7 +175,7 @@ def main():
             password = generate_Password()
             print(f" {password} Has been generated succesfull. You can proceed to use it to your account")
         elif short_code == 'ex':
-            print("Thanks for using passwords store manager.. See you next time!")
+            print("Thanks for using passwords vault manager.. See you next time!")
             break
         else:
             print("Wrong entry... Check your entry again and let it match those in the menu")
