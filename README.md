@@ -1,4 +1,4 @@
-# Password-Vault  
+# Password-Vault   [![codebeat badge](https://codebeat.co/badges/6abc3126-4580-41a0-bc48-d44f9327fdeb)](https://codebeat.co/projects/github-com-jorim1981-password-vault-master)  
 #### 22/05/2020
 #### By **Jorim Midumbi Okong'o Opondo**
 ## Description
