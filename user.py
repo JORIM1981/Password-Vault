@@ -37,7 +37,7 @@ class Credentials():
     Create credentials class to help create new objects of credentials
     """
     credentials_list = []
-    
+
     @classmethod
     def verify_user(cls,username, password):
         """
@@ -82,3 +82,13 @@ class Credentials():
     def copy_password(cls,account):
         found_credentials = Credentials.find_credential(account)
         pyperclip.copy(found_credentials.password)
+
+    @classmethod
+    def if_credential_exist(cls, account):
+        """
+        Method that checks if a credential exists from the credential list and returns true or false depending if the credential exists.
+        """
+        for credential in cls.credentials_list:
+            if credential.account == account:
+                return True
+        return False    
